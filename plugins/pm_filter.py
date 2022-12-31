@@ -1297,8 +1297,8 @@ async def auto_filter(client, msg, spoll=False):
     if settings["button"]:
         btn = [
             [
-                InlineKeyboardButton(🔰
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                InlineKeyboardButton(
+                    text=f"🎭{get_size(file.file_size)} 🔸 {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1307,11 +1307,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}",
+                    text=f"🎭{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"🎭{get_size(file.file_size)}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
             ]
@@ -1322,17 +1322,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'📟 ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
                 
@@ -1343,22 +1343,22 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'📟 ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton(f' 🎬 {search} 🎬 ', 'qinfo')
     ])
 
     if offset != "":
