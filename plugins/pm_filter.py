@@ -1525,7 +1525,7 @@ async def auto_filter(client, msg, spoll=False):
         await msg.message.delete()
 
 
-async def advantage_spell_chok(client, msg):
+asyn🤐🤐🤐c def advantage_spell_chok(client, msg):
     mv_id = msg.id
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
@@ -1595,7 +1595,7 @@ async def advantage_spell_chok(client, msg):
             settings = await get_settings(message.chat.id)
             if settings['auto_delete']:
                 await asyncio.sleep(60)
-                await spell_check_del.delete()
+                await spell_check_del.delete()🤐
 
 
 async def manual_filters(client, message, text=False):
