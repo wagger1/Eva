@@ -61,7 +61,7 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
-    await message.reply_text("<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀs !</b>")
+    await message.reply_text("<b>എന്നോട് പറഞ്ഞിട്ട് കാര്യം ഇല്ല.. 🥲 ഗ്രൂപ്പിൽ ചോദിക്ക് 😜 \nᴀꜱᴋ ɪɴ ᴍʏ ɢʀᴏᴜᴘ 🙃🧨</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
@@ -1582,8 +1582,9 @@ async def advantage_spell_chok(client, msg):
         for k, movie_name in enumerate(movielist)
     ]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    caption= await msg.reply('<b><i>Searching for you result in imdb Wait...🧐<i/></b>')
-    await asyncio.sleep(1)
+    caption= await msg.reply('<b>Cʜᴇᴄᴋɪɴɢ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🧐\n Pʟᴇᴀꜱᴇ Wᴀɪᴛ ‼️...</b>')
+    await asyncio.sleep(2)
+    await spell_check_del.delete()
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
