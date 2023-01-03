@@ -1582,11 +1582,11 @@ async def advantage_spell_chok(client, msg):
         for k, movie_name in enumerate(movielist)
     ]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    caption= await msg.reply('<b>Cʜᴇᴄᴋɪɴɢ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🧐\n Pʟᴇᴀꜱᴇ Wᴀɪᴛ ‼️...</b>')
+    zz = await msg.reply('<b>Cʜᴇᴄᴋɪɴɢ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🧐\n Pʟᴇᴀꜱᴇ Wᴀɪᴛ ‼️...</b>')
     await asyncio.sleep(1)
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
-        caption1=await caption.edit(script.CUDNT_FND.format(mv_rqst)),
+        caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
     try:
