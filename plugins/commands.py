@@ -37,7 +37,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⭕ sᴜʀᴘʀɪsᴇ ⭕', callback_data='start')
+            InlineKeyboardButton(''🍃 sᴜʀᴘʀɪsᴇ 🍃', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgIAAxkBAAEGrmxjjNyUm6AUgsjrwt4EcpvlY3pMzwACZBgAAvG1EEmY4_NunlJkaysE")
@@ -68,8 +68,7 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")],[
-                            InlineKeyboardButton("why", url="https://graph.org/W%CA%9C%CA%8F-I%E1%B4%8D-J%E1%B4%8F%C9%AA%C9%B4%C9%AA%C9%B4%C9%A2-01-07")])
+                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")],[
                             InlineKeyboardButton("why", url="https://graph.org/W%CA%9C%CA%8F-I%E1%B4%8D-J%E1%B4%8F%C9%AA%C9%B4%C9%AA%C9%B4%C9%A2-01-07")])
@@ -82,7 +81,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⭕ sᴜʀᴘʀɪsᴇ ⭕', callback_data='start')
+            InlineKeyboardButton('🍃 sᴜʀᴘʀɪsᴇ 🍃', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgIAAxkBAAEGrmxjjNyUm6AUgsjrwt4EcpvlY3pMzwACZBgAAvG1EEmY4_NunlJkaysE")
