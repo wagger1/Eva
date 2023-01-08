@@ -59,7 +59,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
+                    "🍃 ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🍃", url=invite_link.invite_link
                 )
             ]
         ]
@@ -68,12 +68,12 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton("🍄 ᴛʀʏ ᴀɢᴀɪɴ 🍄", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton("why", url="https://graph.org/W%CA%9C%CA%8F-I%E1%B4%8D-J%E1%B4%8F%C9%AA%C9%B4%C9%AA%C9%B4%C9%A2-01-07")])
+                btn.append([InlineKeyboardButton("🍄 ᴛʀʏ ᴀɢᴀɪɴ 🍄", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**You are not in our Back-up channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...**",
+            text="**⚠️ താഴെ കൊടുത്തിരിക്കുന്ന ചാനൽ ജോയിൻ ചെയ്ത ശേഷം 🍄 ᴛʀʏ ᴀɢᴀɪɴ 🍄 എന്ന ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ മൂവി കിട്ടും 👍🏻\n\n🍃 ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🍃 ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 🍄 ᴛʀʏ ᴀɢᴀɪɴ 🍄 ʙᴜᴛᴛᴏɴ 👍🏻\nᴛʜᴇɴ ʏᴏᴜ ɢᴇᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ 🐸**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
