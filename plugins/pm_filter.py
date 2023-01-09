@@ -1570,10 +1570,11 @@ async def advantage_spell_chok(client, msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     zz = await msg.reply('<b>Cʜᴇᴄᴋɪɴɢ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🧐\n Pʟᴇᴀꜱᴇ Wᴀɪᴛ ‼️...</b>')
     await asyncio.sleep(3)
-    zz1 = await zz.edit(msg.reply_photo(
+    await zz.delete()
+    spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
-        reply_markup=InlineKeyboardMarkup(btn)) 
+        reply_markup=InlineKeyboardMarkup(btn)
     )
     try:
         if settings['auto_delete']:
