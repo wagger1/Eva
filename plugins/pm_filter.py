@@ -1619,16 +1619,16 @@ async def manual_filters(client, message, text=False):
                             try:
                                 if settings['auto_delete']:
                                     await asyncio.sleep(30)
+                                    await message.delete()
                                     await joelkb.delete()
-                                    await msg.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_delete', True)
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_delete']:
                                     await asyncio.sleep(30)
+                                    await message.delete()
                                     await joelkb.delete()
-                                    await msg.delete()
 
                         else:
                             button = eval(btn)
@@ -1643,16 +1643,16 @@ async def manual_filters(client, message, text=False):
                             try:
                                 if settings['auto_delete']:
                                     await asyncio.sleep(30)
+                                    await message.delete()
                                     await hmm.delete()
-                                    await msg.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_delete', True)
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_delete']:
                                     await asyncio.sleep(30)
+                                    await message.delete()
                                     await hmm.delete()
-                                    await msg.delete()
 
                     elif btn == "[]":
                         oto = await client.send_cached_media(
@@ -1665,16 +1665,16 @@ async def manual_filters(client, message, text=False):
                         try:
                             if settings['auto_delete']:
                                 await asyncio.sleep(30)
+                                await message.delete()
                                 await oto.delete()
-                                await msg.delete()
                         except KeyError:
                             grpid = await active_connection(str(message.from_user.id))
                             await save_group_settings(grpid, 'auto_delete', True)
                             settings = await get_settings(message.chat.id)
                             if settings['auto_delete']:
                                 await asyncio.sleep(30)
+                                await message.delete()
                                 await oto.delete()
-                                await msg.delete()
 
                     else:
                         button = eval(btn)
@@ -1687,16 +1687,16 @@ async def manual_filters(client, message, text=False):
                         try:
                             if settings['auto_delete']:
                                 await asyncio.sleep(30)
+                                await message.delete()
                                 await dlt.delete()
-                                await msg.delete()
                         except KeyError:
                             grpid = await active_connection(str(message.from_user.id))
                             await save_group_settings(grpid, 'auto_delete', True)
                             settings = await get_settings(message.chat.id)
                             if settings['auto_delete']:
                                 await asyncio.sleep(30)
+                                await message.delete()
                                 await dlt.delete()
-                                await msg.delete()
 
                 except Exception as e:
                     logger.exception(e)
