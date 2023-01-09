@@ -895,7 +895,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🥊 ᴏᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('🔹 ɢʀᴏᴜᴘ', url=GRP_LNK),
+                    InlineKeyboardButton('㊙️ ɢʀᴏᴜᴘ', url=GRP_LNK),
                 ],[
                     InlineKeyboardButton('🥀 ʜᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🐭 ᴀʙᴏᴜᴛ', callback_data='about'),
@@ -976,11 +976,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴛᴀᴛᴜs 🎲', callback_data='stats'),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 🏓', callback_data='source'),
+            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ 🎲', callback_data='stats')
         ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔹Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🔅 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1140,7 +1140,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rfrsh":
-        await query.answer("Fetching MongoDb DataBase")
+        await query.answer("👒 ʀᴇғʀᴇꜱʜɪɴɢ ꜱᴛᴀᴛᴜꜱ 👒")
         buttons = [[
             InlineKeyboardButton('🍃 ʙᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('ʀᴇғʀᴇsʜ 🍄', callback_data='rfrsh')
