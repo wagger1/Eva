@@ -501,7 +501,7 @@ async def settings(client, message):
               ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
-                if chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+        if chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             await message.reply_text(
                 text="<b>Dᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ sᴇᴛᴛɪɴɢs ʜᴇʀᴇ ?</b>",
                 reply_markup=InlineKeyboardMarkup(btn),
