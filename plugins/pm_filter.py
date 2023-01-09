@@ -1580,7 +1580,7 @@ async def advantage_spell_chok(client, msg):
         if settings['auto_delete']:
             await asyncio.sleep(40)
             await msg.delete()
-            await zz1.delete()
+            await spell_check_del.delete()
     except KeyError:
             grpid = await active_connection(str(message.from_user.id))
             await save_group_settings(grpid, 'auto_delete', True)
@@ -1588,7 +1588,7 @@ async def advantage_spell_chok(client, msg):
             if settings['auto_delete']:
                 await asyncio.sleep(40)
                 await msg.delete()
-                await zz1.delete()
+                await spell_check_del.delete()
 
 
 async def manual_filters(client, message, text=False):
