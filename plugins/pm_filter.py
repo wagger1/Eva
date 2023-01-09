@@ -1569,7 +1569,7 @@ async def advantage_spell_chok(client, msg):
     ]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     zz = await msg.reply('<b>Cʜᴇᴄᴋɪɴɢ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🧐\n Pʟᴇᴀꜱᴇ Wᴀɪᴛ ‼️...</b>')
-    await asyncio.sleep(2)
+    await asyncio.sleep(3)
     await zz.delete()
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
@@ -1618,15 +1618,17 @@ async def manual_filters(client, message, text=False):
                             )
                             try:
                                 if settings['auto_delete']:
-                                    await asyncio.sleep(10)
+                                    await asyncio.sleep(30)
                                     await joelkb.delete()
+                                    await msg.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_delete', True)
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_delete']:
-                                    await asyncio.sleep(10)
+                                    await asyncio.sleep(30)
                                     await joelkb.delete()
+                                    await msg.delete()
 
                         else:
                             button = eval(btn)
@@ -1640,15 +1642,17 @@ async def manual_filters(client, message, text=False):
                             )
                             try:
                                 if settings['auto_delete']:
-                                    await asyncio.sleep(10)
+                                    await asyncio.sleep(30)
                                     await hmm.delete()
+                                    await msg.delete()
                             except KeyError:
                                 grpid = await active_connection(str(message.from_user.id))
                                 await save_group_settings(grpid, 'auto_delete', True)
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_delete']:
-                                    await asyncio.sleep(10)
+                                    await asyncio.sleep(30)
                                     await hmm.delete()
+                                    await msg.delete()
 
                     elif btn == "[]":
                         oto = await client.send_cached_media(
@@ -1660,15 +1664,17 @@ async def manual_filters(client, message, text=False):
                         )
                         try:
                             if settings['auto_delete']:
-                                await asyncio.sleep(10)
+                                await asyncio.sleep(30)
                                 await oto.delete()
+                                await msg.delete()
                         except KeyError:
                             grpid = await active_connection(str(message.from_user.id))
                             await save_group_settings(grpid, 'auto_delete', True)
                             settings = await get_settings(message.chat.id)
                             if settings['auto_delete']:
-                                await asyncio.sleep(10)
+                                await asyncio.sleep(30)
                                 await oto.delete()
+                                await msg.delete()
 
                     else:
                         button = eval(btn)
@@ -1680,15 +1686,17 @@ async def manual_filters(client, message, text=False):
                         )
                         try:
                             if settings['auto_delete']:
-                                await asyncio.sleep(10)
+                                await asyncio.sleep(30)
                                 await dlt.delete()
+                                await msg.delete()
                         except KeyError:
                             grpid = await active_connection(str(message.from_user.id))
                             await save_group_settings(grpid, 'auto_delete', True)
                             settings = await get_settings(message.chat.id)
                             if settings['auto_delete']:
-                                await asyncio.sleep(10)
+                                await asyncio.sleep(30)
                                 await dlt.delete()
+                                await msg.delete()
 
                 except Exception as e:
                     logger.exception(e)
