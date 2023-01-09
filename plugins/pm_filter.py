@@ -1489,13 +1489,13 @@ async def auto_filter(client, msg, spoll=False):
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...</b>")
         else:
-            fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            sachu = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️\n🔍 Search Again ‼️</b>")
+                    await sachu.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️\n🔍 Search Again ‼️</b>")
                     await asyncio.sleep(10)
-                    await fuk.delete()
+                    await sachu.delete()
                     await message.delete()
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
@@ -1503,9 +1503,9 @@ async def auto_filter(client, msg, spoll=False):
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️\n🔍 Search Again ‼️</b>")
+                    await sachu.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️\n🔍 Search Again ‼️</b>")
                     await asyncio.sleep(10)
-                    await fuk.delete()
+                    await sachu.delete()
                     await message.delete()
     if spoll:
         await msg.message.delete()
