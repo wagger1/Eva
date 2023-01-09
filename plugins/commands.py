@@ -518,7 +518,7 @@ async def settings(client, message):
                 reply_to_message_id=message.id
         )
         await asyncio.sleep(60)
-        await message.reply_text.delete()
+        await (message.reply_text).delete()
         await message.delete()
 
 @Client.on_message(filters.command('set_template'))
