@@ -39,10 +39,7 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                 ],[
-                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/sachusachuz")
+                    InlineKeyboardButton('❗️Rᴇᴀᴅ Gʀᴏᴜᴘ Rᴜʟᴇꜱ❗️', url="https://graph.org/H%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%C9%A2%E1%B4%87%E1%B4%9B-%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%EA%9C%B1--%EA%9C%B1%E1%B4%87%CA%80%C9%AA%E1%B4%87%EA%9C%B1-%D2%93%CA%80%E1%B4%8F%E1%B4%8D-%E1%B4%87%E1%B4%A0%E1%B4%80-%CA%99%E1%B4%8F%E1%B4%9B-01-11")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -62,11 +59,8 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                                                                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                                                                        ],[
-                                                                           InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/sachusachuz")
-                                                                         ]]
+                                                                           InlineKeyboardButton('❗️Rᴇᴀᴅ Gʀᴏᴜᴘ Rᴜʟᴇꜱ❗️', url="https://graph.org/H%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%C9%A2%E1%B4%87%E1%B4%9B-%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%EA%9C%B1--%EA%9C%B1%E1%B4%87%CA%80%C9%AA%E1%B4%87%EA%9C%B1-%D2%93%CA%80%E1%B4%8F%E1%B4%8D-%E1%B4%87%E1%B4%A0%E1%B4%80-%CA%99%E1%B4%8F%E1%B4%9B-01-11")
+                                                                        ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
