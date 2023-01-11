@@ -513,13 +513,13 @@ async def settings(client, message):
             await message.reply_text(
                 text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As Yᴏᴜʀ Wɪsʜ ⚙</b>",
                 reply_markup=reply_markup,
-                disable_web_page_preview=True,
-                parse_mode=enums.ParseMode.HTML,
-                reply_to_message_id=message.id
+            disable_web_page_preview=True,
+            parse_mode=enums.ParseMode.HTML,
+            reply_to_message_id=message.id
         )
         await asyncio.sleep(60)
+        await stng.delete()
         await message.delete()
-        await message.reply_text.delete()
 
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
