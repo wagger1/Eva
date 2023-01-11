@@ -709,7 +709,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('10 Mɪɴs' if settings["auto_delete"] else '✘ Oғғ',
+                    InlineKeyboardButton('1 Mɪɴs' if settings["auto_delete"] else '✘ Oғғ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
@@ -953,14 +953,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('FIʟᴛᴇʀs', callback_data='filters'),
-            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file')
+            InlineKeyboardButton('🐁 ғɪʟᴛᴇʀꜱ', callback_data='filters'),
+            InlineKeyboardButton('📁 ғɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file')
         ], [
-            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅs', callback_data='extra')
+            InlineKeyboardButton('🖇 ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
+            InlineKeyboardButton('⚰️ Exᴛʀᴀ', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Aᴅᴍɪɴ', callback_data='admin')         
+            InlineKeyboardButton('🏠 ʜᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('⚙️ ᴀᴅᴍɪɴ', callback_data='admin')         
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -976,8 +976,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 🏓', callback_data='source'),
-            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ 🎲', callback_data='stats')
+            InlineKeyboardButton('🏓 ꜱᴏᴜʀᴄᴇ', callback_data='source'),
+            InlineKeyboardButton('🎲 ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
         ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('🔅 Cʟᴏsᴇ', callback_data='close_data')
@@ -1011,7 +1011,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('🍃 ʙᴀᴄᴋ', callback_data='filters'),
-            InlineKeyboardButton('Bᴜᴛᴛᴏɴs', callback_data='button')
+            InlineKeyboardButton('🔘 ʙᴜᴛᴛᴏɴꜱ', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1119,7 +1119,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('🍃 ʙᴀᴄᴋ', callback_data='about'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ 🍄', callback_data='rfrsh')
+            InlineKeyboardButton('🍄 ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1134,15 +1134,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = 536870912 - monsize
         monsize = get_size(monsize)
         free = get_size(free)
-        await query.message.edit_text(
-            text="• ° °"
-        )
-        await query.message.edit_text(
-            text="• • °"
-        )
-        await query.message.edit_text(
-            text="• • •"
-        )
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
@@ -1152,7 +1143,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("👒 ʀᴇғʀᴇꜱʜɪɴɢ ꜱᴛᴀᴛᴜꜱ 👒")
         buttons = [[
             InlineKeyboardButton('🍃 ʙᴀᴄᴋ', callback_data='about'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ 🍄', callback_data='rfrsh')
+            InlineKeyboardButton('🍄 ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1167,15 +1158,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = 536870912 - monsize
         monsize = get_size(monsize)
         free = get_size(free)
-        await query.message.edit_text(
-            text="• ° °"
-        )
-        await query.message.edit_text(
-            text="• • °"
-        )
-        await query.message.edit_text(
-            text="• • •"
-        )
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
