@@ -96,14 +96,17 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
 
     STATUS_TXT = """<b>── • ❰ 🍃 Bot DB Status 🍃❱ • ──
+
 ᚛›📑 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
 ᚛›👤 ᴜsᴇʀs: <code>{}</code>
 ᚛›👥 ɢʀᴏᴜᴘs: <code>{}</code>
 ᚛›📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code>
 ᚛›🗂️ ғʀᴇᴇ: <code>{}</code></b>
-── • ❰🔅 Last Updated 🔅❱ • ──
-📅 Dᴀᴛᴇ : 2023-01-12
-⏰ Tɪᴍᴇ : 11:11:11 PM"""
+
+── • ❰🔅 𝐋𝐚𝐬𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 🔅❱ • ──
+
+📅 𝐃ᴀᴛᴇ : 𝟐𝟎𝟐𝟑-𝟎𝟏-𝟏𝟐
+⏰ 𝐓ɪᴍᴇ : 𝟏𝟏:𝟏𝟏:𝟏𝟏 𝐏𝐌"""
 
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
