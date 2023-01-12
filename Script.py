@@ -95,11 +95,18 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
 
-    STATUS_TXT = """<b>📂 ᴛᴏᴛᴀʟ ғɪʟᴇs: <code>{}</code>
-👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
-♻️ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
-🗃️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
-🆓 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code></b>"""
+    STATUS_TXT = """<b>── • ❰ 🍃 Bot DB Status 🍃❱ • ──
+
+᚛›📑 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
+᚛›👤 ᴜsᴇʀs: <code>{}</code>
+᚛›👥 ɢʀᴏᴜᴘs: <code>{}</code>
+᚛›📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code>
+᚛›🗂️ ғʀᴇᴇ: <code>{}</code></b>
+
+── • ❰🔅 Last Updated 🔅❱ • ──
+
+📅 Dᴀᴛᴇ : 2023-01-12
+⏰ Tɪᴍᴇ : 11:11:11 PM"""
 
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
