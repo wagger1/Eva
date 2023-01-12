@@ -103,7 +103,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ᚛›📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code>
 ᚛›🗂️ ғʀᴇᴇ: <code>{}</code></b>
 
-── • ❰🔅 Last Updated 🔅❱ • ──
+<b>── • ❰🔅 Last Updated 🔅❱ • ──
 
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code>
