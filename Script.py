@@ -1,5 +1,5 @@
 class script(object):
-"""<b>Hᴇʟʟᴏ {},
+START_TXT = """<b>Hᴇʟʟᴏ {},
 I ᴀᴍ <a href=https://t.me/{}>{}</a>, ᴏɴʟʏ ᴡᴏʀᴋ ғᴏʀ <a href=https://t.me/CinemaXpressTM> CɪɴᴇᴍᴀXᴘʀᴇssTM</a> Jᴏɪɴ ᴍʏ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀsᴋ ᴀɴʏ ᴍᴏᴠɪᴇ 🐝</b>"""
 
     ABOUT_TXT = """<b>🍃 му иαмє: {}
