@@ -106,12 +106,12 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 <b>── • ❰🔅 Last Updated 🔅❱ • ──
 
 📅 Dᴀᴛᴇ : 2023-01-12
-⏰ Tɪᴍᴇ : 11:11:11 PM</b>""""""
+⏰ Tɪᴍᴇ : 11:11:11 PM</b>""""
 
-    LOG_TEXT_G = """<b>#NewGroup
+    LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
-Aᴅᴅᴇᴅ Bʏ - {}</b>"""
+Aᴅᴅᴇᴅ Bʏ - {}"""
 
     LOG_TEXT_P = """<b>#NewUser
 ID - <code>{}</code>
