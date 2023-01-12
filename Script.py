@@ -101,9 +101,9 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ᚛›👤 ᴜsᴇʀs: <code>{}</code>
 ᚛›👥 ɢʀᴏᴜᴘs: <code>{}</code>
 ᚛›📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code>
-᚛›🗂️ ғʀᴇᴇ: <code>{}</code></b>
+᚛›🗂️ ғʀᴇᴇ: <code>{}</code>
 
-<b>── • ❰🔅 Last Updated 🔅❱ • ──
+── • ❰🔅 Last Updated 🔅❱ • ──
 
 📅 Dᴀᴛᴇ : 2023-01-12
 ⏰ Tɪᴍᴇ : 11:11:11 PM</b>""""
