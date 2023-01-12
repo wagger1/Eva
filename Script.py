@@ -105,10 +105,8 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 
 <b>── • ❰🔅 Last Updated 🔅❱ • ──
 
-📅 Dᴀᴛᴇ : <code>{}</code>
-⏰ Tɪᴍᴇ : <code>{}</code>
-🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
-🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>""""""
+📅 Dᴀᴛᴇ : 2023-01-12
+⏰ Tɪᴍᴇ : 11:11:11 PM</b>""""""
 
     LOG_TEXT_G = """<b>#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
