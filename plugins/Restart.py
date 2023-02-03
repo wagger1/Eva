@@ -1,7 +1,7 @@
 import re, asyncio, os, sys
 from pyrogram import Client, filters, enums
 from pyrogram.types import *
-
+from info import ADMINS
 
     
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
