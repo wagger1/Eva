@@ -2,8 +2,7 @@ import re, asyncio, os, sys
 from pyrogram import Client, filters, enums
 from pyrogram.types import *
 
-msg = await bot.send_message(chat_id=update.chat.id, text="__Processing...__", parse_mode=enums.ParseMode.MARKDOWN)         
-    await msg.edit_text(text=ms_g, parse_mode=enums.ParseMode.HTML)
+
     
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
 async def stop_button(bot, message):
