@@ -7,7 +7,6 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>🍃 му иαмє: {}
 🍃 ¢яєαтσя : <a href=https://t.me/Sachusachuz> 🖤⃝ѕαϲнυ🖤⃝ ѕαϲнυz࿐</a>
-🍃 ƭɦαɳҡร ƭσ : <a href=https://t.me/creatorbeatz>Jᴏᴇʟ ᠰ TɢX</a>
 🍃 ℓαиgυαgє : ρутнσи
 🍃 ℓιвяαяу : ρуяσgяαм
 🍃 ѕєяνєя : κογєϐ
