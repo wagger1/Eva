@@ -142,13 +142,9 @@ Nᴀᴍᴇ - {}</b>"""
 <b>⍟───[ ᴄʀᴇᴅɪᴛꜱ ]───⍟
 
 ➥ ᴏᴡɴᴇʀ : <a href=https://t.me/Sachusachuz>🦇⃝🍂Sᴀᴄʜᴜꜱᴀᴄʜᴜᴢ🕊️ ⃟⃟⃝⃪⃟⃝🦋─‌⃛</a>
-
 ➥ ᴛʜᴀɴᴋꜱ ᴛᴏ : <a href=https://github.com/EvamariaTG>Eᴠᴀ ᴍᴀʀɪᴀ​</a>
-
 ➥ ᴄᴏᴅᴇᴅ ʙʏ : <a href=https://t.me/creatorbeatz>Jᴏᴇʟ ᠰ TɢX</a>
-
 ➥ ғᴇᴀᴛᴜʀᴇꜱ ᴀᴅᴅᴇᴅ ʙʏ : <a href=https://t.me/A_s_w_i_n_01>『Dᴇᴠɪʟ࿐Tɢ』</a>
-
 ➥ ᴇᴅɪᴛᴇᴅ ʙʏ : <a href=https://t.me/Sachusachuz>🦇⃝🍂Sᴀᴄʜᴜꜱᴀᴄʜᴜᴢ🕊️ ⃟⃟⃝⃪⃟⃝🦋─‌⃛</a></b>"""
 
     REQINFO = """ᴀʟʟ ᴛʜᴇ ғɪʟᴛᴇʀ ᴄʜᴀᴛꜱ ᴅᴇʟᴇᴛᴇ ɪɴ 𝟷ᴍɪɴꜱ ⁉️
