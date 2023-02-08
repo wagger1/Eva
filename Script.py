@@ -6,7 +6,7 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, ᴏɴʟʏ ᴡᴏʀᴋ ғᴏʀ 
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>🍃 му иαмє: {}
-🍃 ¢яєαтσя : <a href=https://t.me/Sachusachuz> 🖤⃝ѕαϲнυ🖤⃝ ѕαϲнυz࿐</a>
+🍃 ¢яєαтσя : <a href=https://t.me/Sachusachuz> 🦇⃝🍂Sᴀᴄʜᴜꜱᴀᴄʜᴜᴢ🕊️ ⃟⃟⃝⃪⃟⃝🦋─⃛͢࿐</a>
 🍃 ℓαиgυαgє : ρутнσи
 🍃 ℓιвяαяу : ρуяσgяαм
 🍃 ѕєяνєя : κογєϐ
