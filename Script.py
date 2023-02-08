@@ -37,7 +37,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/DQ_The_File_Donor_Updates)</code>
+<code>[Button Text](buttonurl:https://t.me/CxMaxxx)</code>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
@@ -140,11 +140,21 @@ Nᴀᴍᴇ - {}</b>"""
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
     OWNER_INFO = """
-<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
-    
-• ꜰᴜʟʟ ɴᴀᴍᴇ : 🖤⃝Sᴀᴄʜᴜ🖤⃝ Sᴀᴄʜᴜᴢ࿐
-• Uꜱᴇʀ ɴᴀᴍᴇ : @Sachusachuz
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/sachusachuz'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+<b>🔅───[ ᴄʀᴇᴅɪᴛꜱ ]───🔅
+
+➥ ᴛʜᴀɴᴋꜱ ᴛᴏ : <a href=https://github.com/EvamariaTG>Eᴠᴀ ᴍᴀʀɪᴀ​</a>
+
+➥ ᴄᴏᴅᴇᴅ ʙʏ : <a href=https://t.me/creatorbeatz>Jᴏᴇʟ ᠰ TɢX</a>
+
+➥ ғᴇᴀᴛᴜʀᴇꜱ ᴀᴅᴅᴇᴅ ʙʏ : <a href=https://t.me/A_s_w_i_n_01>『Dᴇᴠɪʟ࿐Tɢ』</a>
+
+<b>⍟───[ ᴍᴀɪɴʟʏ ᴇᴅɪᴛᴇᴅ ]───⍟
+
+➥ ᴍᴀɪɴʟʏ ᴇᴅɪᴛᴇᴅ ʙʏ : <a href=https://t.me/Sachusachuz>🦇⃝🍂Sᴀᴄʜᴜꜱᴀᴄʜᴜᴢ🕊️ ⃟⃟⃝⃪⃟⃝🦋─‌⃛</a>
+
+<b>⍟───[ ᴍʏ ᴏᴡɴᴇʀ ]───⍟
+
+➥ ᴏᴡɴᴇʀ : <a href=https://t.me/Sachusachuz>🦇⃝🍂Sᴀᴄʜᴜꜱᴀᴄʜᴜᴢ🕊️ ⃟⃟⃝⃪⃟⃝🦋─‌⃛</a></b></b>"""
 
     REQINFO = """ᴀʟʟ ᴛʜᴇ ғɪʟᴛᴇʀ ᴄʜᴀᴛꜱ ᴅᴇʟᴇᴛᴇ ɪɴ 𝟷ᴍɪɴꜱ ⁉️
 
