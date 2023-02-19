@@ -65,11 +65,11 @@ ADMINS.extend([1125210189]) if not 1125210189 in ADMINS else ""
     try:
         user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
     except UserNotParticipant:
-        pass
+        return False
     except Exception as e:
         logger.exception(e)
     else:
-        if user.status != 'kicked':
+        if not (user.status == enums.ChatMemberStatus.BANNED):
             return True
 
     return False
