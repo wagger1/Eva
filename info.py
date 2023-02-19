@@ -37,9 +37,12 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 
 #Fsub
-
-
-
+auth_channel = environ.get('AUTH_CHANNEL')
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+# Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
+REQ_CHANNEL = environ.get("REQ_CHANNEL", False)
+REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 support_chat_id = environ.get('SUPPORT_CHAT_ID')
 reqst_channel = environ.get('REQST_CHANNEL_ID')
