@@ -1594,27 +1594,14 @@ async def advantage_spell_chok(client, msg):
         for k, movie_name in enumerate(movielist)
     ]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    zz = await msg.reply('<b>Cʜᴇᴄᴋɪɴɢ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🧐\n Pʟᴇᴀꜱᴇ Wᴀɪᴛ ‼️...</b>')
+    zz = await msg.reply('<b><i>Searching for you result in imdb Wait...🧐<i/></b>')
     await asyncio.sleep(3)
-    await zz.delete()
-    spell_check_del = await msg.reply_photo(
+    zz1 = await zz.edit(await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
-        reply_markup=InlineKeyboardMarkup(btn)
-    )
-    try:
-        if settings['auto_delete']:
-            await asyncio.sleep(40)
-            await msg.delete()
-            await spell_check_del.delete()
-    except KeyError:
-            grpid = await active_connection(str(message.from_user.id))
-            await save_group_settings(grpid, 'auto_delete', True)
-            settings = await get_settings(message.chat.id)
-            if settings['auto_delete']:
-                await asyncio.sleep(40)
-                await msg.delete()
-                await spell_check_del.delete()
+                    reply_markup=InlineKeyboardMarkup(btn))
+    await asyncio.sleep(17)
+    await zz1.delete()
 
 
 async def manual_filters(client, message, text=False):
