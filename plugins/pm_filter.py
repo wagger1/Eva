@@ -1593,16 +1593,13 @@ async def advantage_spell_chok(client, msg):
         ]
         for k, movie_name in enumerate(movielist)
     ]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     zz = await msg.reply('<b><i>Searching for you result in imdb Wait...🧐<i/></b>')
-    await asyncio.sleep(3)
-    zz1 = await zz.edit(await msg.reply_photo(
-        photo=(SPELL_IMG),
-        caption=(script.CUDNT_FND.format(mv_rqst)),
+    await asyncio.sleep(1)
+    zz1 = await zz.edit("<b><i>I couldn't find anything related to that Did you mean any one of these?</i></b>",
                     reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(17)
     await zz1.delete()
-
 
 async def manual_filters(client, message, text=False):
     settings = await get_settings(message.chat.id)
