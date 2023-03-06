@@ -1596,7 +1596,7 @@ async def advantage_spell_chok(client, msg):
         for k, movie_name in enumerate(movielist)
     ]
     btn.append([InlineKeyboardButton(text="Cʟᴏsᴇ ⊝", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    zz = await msg.reply('<b><i>⚙️ sᴇᴀʀᴄʜɪɴɢ ғᴏʀ ʏᴏᴜ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴅʙ ⚠️\ɴᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...🧐<i/></b>')
+    zz = await msg.reply('<b><i>⚙️ sᴇᴀʀᴄʜɪɴɢ ғᴏʀ ʏᴏᴜ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴅʙ ⚠️\nᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...🧐<i/></b>')
     await asyncio.sleep(4)
     zz1 = await zz.edit("<b><i>I couldn't find anything related to that Did you mean any one of these?</i></b>",
                     reply_markup=InlineKeyboardMarkup(btn))
